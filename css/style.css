@@ -1,0 +1,585 @@
+*{
+    font-family: "Open Sans";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Hierin staan de waarden die gegeven zijn aan de tekst op de website*/
+html{
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 300;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+/*Achtergrondkleur voor de body*/
+body{
+    background-color: #ccc;
+}
+
+/* De hoogte, breedte en het zorgen van afgeronde hoekjes voor het logo*/
+.logo img{    
+    height: 103px;
+    width: 146px;
+    border-radius: 15px;
+}
+
+/*Hierdoor staan er geen lijnen meer onder de navigatie binnen de navbar*/
+a{
+    text-decoration: none;
+}
+
+/*Design voor de tekst onder de informatietabs*/
+.p_info{
+    text-align: center;
+    font-style: italic;
+}
+
+/*Wanneer je met je muis over de informatietekst gaat, wordt de tekst dikgedrukt en groter.*/
+.p_info:hover{
+font-weight: bold;
+font-size: 17px;
+}
+ 
+
+
+/*De stijl aan de buttons op hero-banner*/
+button{
+    cursor: pointer;
+    background: transparent;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/*Hierin staat de stijl beschreven die ik heb gegeven aan de heading tags*/
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0rem 0;
+    line-height: 1.25;
+    font-weight: 400;
+
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+/* Op deze manier zorg ik dat alle informatie op de banner goed in het midden blijft staan*/
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Hier staan alle waarden voor de header*/
+.header{
+    background-image: linear-gradient(rgba(66, 66, 66, 0.8), rgba(24, 14, 68, 0.89));   
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+/*Hier staan de kenmerken die gegeven zijn aan de navigatiebar*/
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+/*De links/ teskt in de navigatiebar hebben een zwarte kleur in dikgedrukte letters*/
+a.nav-link{
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+
+}
+
+/*Met behulp van de hover selector, zorg ik ervoor dat als je met de muis over een nav-link gaat, de kleur veranderd naar een baluwe kleur*/
+a.nav-link:hover{
+    color:rgb(6, 63, 124);
+    font-weight: bold;
+    font-size: 16px;
+
+
+}
+
+/*Nog enkele waarden aan de nav-links/ tekst binnen de navbar*/
+.nav-link{
+    text-transform: uppercase;
+    font-size: 0.97em;
+    font-weight: 500;
+    opacity: 0.85;
+    letter-spacing: 1.85px;
+    
+}
+
+.hero-div{
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*De grootte van de heading tag binnen de hero-banner*/
+.hero-div h1{
+    font-size: 3.5rem;
+}
+
+/*Zorgt voor afstand tussen de buttons en de heading op de banner */
+.banner-btns{
+    margin-top: 4rem;
+}
+
+/*Geeft opmaak aan de buttons*/
+.banner-btns button{
+    text-transform: uppercase;
+    border: 4.0px solid #fff;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+}
+
+/*Opmaak aan btn1 en btn2, denk aan kleur en de afstand tussen de twee buttons*/
+.btn1, .btn2{
+    margin-right: 0.8rem;
+    color: #f0f0f0;
+}
+
+/*Geeft grootte aan button1 en button2*/
+a.btn1, a.btn2{
+font-size: 16px;
+}
+
+/*De achtergrondkleur voor de detailpagina FDD*/
+.FDD{
+    background: var(--white-smoke);
+}
+
+/*De opmaak van de inhoud van de detailsectie FDD*/
+.FDD-stuk{
+    background: #fff;
+    text-align: center;                                 
+    margin: 2rem 0;
+    padding: 3.6rem 1.7rem; 
+    border-radius: 4px;
+}
+
+/*Dit zorgt ervoor dat de tekstblokjes binnen de sectie een schaduw krijgen als je met je muis erover gaat*/
+.FDD-stuk:hover{
+    box-shadow: 0 21px 19px -2px rgb(238, 236, 236);
+}
+
+section#Ontwerp.Ontwerp{
+    padding: 0px 0px;
+}
+
+section#FDD.FDD{
+    padding: 0px 0px;
+}
+
+/*Hiermee zorg je dat de link van de toets Interaction design dikgedrukt en groter wordt wanneer je met je muis erover heen gaat.*/
+.link_bewijstoets:hover{
+font-weight: bold;
+font-size: 18px;
+}
+/*De opmaak voor een lijn die ik in de index heb geplaatst onder headings*/
+.lijn{
+    width: 65px;
+    margin: 1.5rem auto;
+    background: #60dacf;
+    height: 2.7px;
+}
+/*De stijl aan de tab, tab buttons en de tab content.*/
+.tab {
+    overflow: hidden;
+    border: 1.5px solid rgb(141, 141, 141);
+    background-color: #f1f1f1;
+  }
+  
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 63.42px;
+    transition: 0.3s;
+    
+  }
+  
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  .tabcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    border: 90px  solid #ccc;
+    border-top: none;
+  }
+
+  .tabcontent1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    border: 90px  solid #ccc;
+    border-top: none;
+  }
+  button.tablinks{
+font-size: 13.7px;
+  }
+
+
+/*Achtergrondkleur voor de sectie Ontwerp*/
+.Ontwerp{
+background-color:#ccc
+}
+
+/*Achtergrondkleur voor de sectie contact*/
+.contact{
+    background-color:var(--white-smoke);
+}
+
+
+/*Media regels voor de Design Thinking blokken*/ 
+@media screen and (min-width: 880px){
+    .FDD .designthinking{
+        display: grid;
+        gap: 2.5rem;
+    }
+}
+
+/*Mediaregels voor de navigatiebar*/
+@media screen and (min-width: 742.4px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-nav{
+        display: flex;
+        margin: 0;
+    }
+    .nav-item{
+        margin-left: 2rem;
+    }
+    
+    .FDD .designthinking{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+/*De opmaak voor de uitklapbare informatietabs*/
+.hoofdstuk {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+    }
+    
+    input {
+    position: relative; 
+    
+    }
+    
+    label.chapterlabel {
+    position: relative;
+    display: block;
+    padding: 0 0 0 20px;
+    background-color: #343434;
+    font-weight: bold;
+    line-height: 50px;
+    cursor: pointer;
+    }
+    
+    .hoofdstuk-content {
+    max-height: 0;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: max-height .50s;
+    -moz-transition: max-height .50s;
+    -o-transition: max-height .50s;
+    transition: max-height .50s;
+    }
+    
+    .hoofdstuk-content p {
+    margin: 20px;
+    color:rgba(0, 0, 0, 0.8);
+    font-family: "Open Sans";
+    }
+
+    label.chapterlabel::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    }
+    
+    input[type=checkbox] + label.chapterlabel::after {
+        content: "+";
+        }
+        
+        input:checked ~ .hoofdstuk-content {
+            max-height: 400px;
+            }
+
+    .contact{
+        border: 40px solid #ccc;
+
+    }
+
+    a[href^="mailto"]::before {
+        content: "📧 ";
+    }
+    
+    a[href^="tel"]::before {
+        content: "📞 ";
+    }
+    #idLinkedInIcon{background-color:rgb(0, 102, 170);border-radius:6px;color:white;cursor:pointer;display:inline-block;font:bold 35px Arial, Helvetica, sans-serif;height:40px;margin-top:1px;text-align:center;width:40px;}
+    #idLinkedInIcon:hover{background-color:#06d;}    
+    
+    /*De opmaak voor het blok van het contactformulier*/
+    .contact-stuk{
+        background: #fff;
+        margin: 2rem 25rem;
+        padding: 3.6rem 1.7rem; 
+        border-radius: 4px;
+        transition: var(--transition);
+        
+    }
+    
+    /*Dit zorgt ervoor dat de tekstblokjes binnen de sectie beweegbaar zijn als je met je muis erover gaat*/
+    .contact-stuk:hover{
+        box-shadow: 0 21px 19px -2px rgba(217, 217, 217, 1);
+    }
+
+ /*Contactformulier opmaakregels*/   
+form {
+    width: 300px;
+    margin: auto;
+}
+
+form > input, form > textarea {
+    border-radius: 4px;
+    border: solid 2px #000000;
+    padding: .5em;
+    margin: 1em;
+}
+
+/*Opmaak aan de invoervelden en textarea van het contactformulier*/
+    input{
+        position: absolute;
+        width: 300px;
+        height: 35px;
+        
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        position: absolute;
+        font-family: "Open Sans";
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+        width: 300px;
+        margin: auto;
+    }
+/*Tekstvak voor het contactformulier*/
+    textarea{
+        position: absolute;
+        width: 300px;
+        height: 100px;
+        
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        position: absolute;
+        font-family: "Open Sans";
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+        width: 300px;
+        margin: auto;
+    }
+
+    /*Contactbutton, dus de submit knop opmaak*/
+.contact_button{
+width: 150px;
+height: 50px;
+
+background: rgba(0, 0, 0, 0.55);
+border-radius: 30px;
+
+font-family: Open Sans;
+font-weight: bold;
+font-size: 18px;
+text-align: center;
+
+color: #FFFFFF;
+margin-left: 20px;
+margin-top: 0px;
+    }
+
+    /*Wanneer je met je muis over de contact button gaat, dan zal er een schaduw komen*/
+    .contact_button:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+
+/*Dit is de opmaak voor de development tab*/
+.tab_development {
+    overflow: hidden;
+    border: 1.5px solid rgb(141, 141, 141);
+    background-color: #f1f1f1;
+  }
+  
+  /*De tab buttons hebben ook een eigen opmaak*/
+  .tab_development button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 93.5px;
+    transition: 0.3s;
+    
+  }
+  
+  /*Wanneer je met je muis over de tab button gaat krijgt de knop een witte achtergrondkleur*/
+  .tab_development button:hover {
+    background-color: #ddd;
+  }
+  
+    /*Wanneer je met je muis op de tab button klikt krijgt de knop een grijs/witte achtergrondkleur*/
+  .tab_development button.active {
+    background-color: #ccc;
+  }
+  
+  /*Zorgen voor een ronde profielfoto op de contactpagina op de juiste plek*/
+  .img_profielfoto{
+    margin-left: -350px;
+    margin-top: -200px;
+    border-radius: 50%;
+  }
+
+/*Aantal plaatjes op de website met een eigen lengte en breedte*/
+.img_testusers{
+float: right;
+width : 315px;
+height : 188px;
+}
+
+.img_sitemap{
+    width: 458px; 
+    height: 219px;
+}
+
+.img_balsamiq1{
+    width: 339px; 
+    height: 218px;
+}
+
+.img_balsamiq2{
+    width: 339px; 
+    height: 218px;
+}
+
+.img_moodboard{
+    float: right;
+    width: 571px;
+    height: 303px;
+}
+
+.img_practicices1{
+    width: 593px;
+    height: 291px;
+}
+
+.img_home_figma{
+    width:300px;
+    height: 210px;
+}
+
+.img_detail_figma{
+    width: 300px;
+    height: 210px;
+}
+
+.img_contact_figma{
+    width: 300px;
+    height: 210px;
+}
+
+.img_profielfoto{
+    width:133px;
+    height: 133px;
+}
+
+.img_designthinking{
+    width: 466px;
+    height:290px;
+}
+
+.img_lighthouse{
+height: 335px;
+width: 1174px;
+}
+
+.img_boxmodel{
+width: 368px;
+height: 198px;
+}
+
+.img_cloudberry{
+    width: 960px;
+    height: 225px;
+}
+
+/*Mijn naam bij contactinformatie heeft een andere kleur, is vertgedrukt en een groter lettertype*/
+.link-contact-justin{
+    color:rgb(7, 75, 121);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*Wanneer er bij contactinformatie met de muis over mijn naam heen bewogen wordt, dan wordt de tekst groter en veranderd van kleur*/
+.link-contact-justin:hover{
+    color:rgb(0, 123, 255);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+

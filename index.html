@@ -1,0 +1,792 @@
+<!-- De eerste coderegel waarmee je je website begint-->
+<!DOCTYPE html>
+<html lang = "nl">
+  <head>
+    <!-- Hierdoor staat er een icoontje in het tabblad van je website in de browser-->
+    <link rel="icon" href="img/logo.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Hiermee geef je een titel aan het tabblad van je website die openstaat in je browser-->
+    <title>Frontend Design en Development Justin Smits</title>
+    <meta name="description" content="">
+
+    <!-- Dit stukje code zorgt ervoor dat de browser weet hoe de website op verschillende schermformaten moet worden weergegeven.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- De verwijzing naar het CSS bestand, om de website stijl te geven-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Header met daarin de navigatie binnen de website-->
+    <header class = "header" id = "intorductie">
+      <nav class = "navbar">
+        <div class = "container">
+          <!-- Logo linksbovenin-->
+          <div class = "logo">
+            <a href = "index.html"> <img src="img/logo.png" alt="logo" /></a>
+          </div>
+
+          <!-- Navigatiemenu-->
+          <div class = "navbar-nav">
+            <ul class = "navbar-nav">
+              <li class = "nav-item">
+                <a href = "index.html" class = "nav-link">Home</a>
+              </li>
+              <li class = "nav-item">
+                <a href = "#FDD" class = "nav-link">Frontend Design en Development</a>
+              </li>
+              <li class = "nav-item">
+                <a href = "#Ontwerp" class = "nav-link">Ontwerpproces</a>
+              </li>
+              <li class = "nav-item">
+                <a href = "#Development" class = "nav-link">Development</a>
+              </li>
+              <li class = "nav-item">
+                <a href = "#Contact" class = "nav-link">Contact</a>
+              </li>
+              <li class = "nav-item">
+                <a href = "index.html" class = "nav-link"><img src="img/nederlands.png" alt="logo" width="42" height="28"></a>
+              </li>
+              <li class = "nav-item">
+                <a href = "index-en.html" class = "nav-link"><img src="img/britsevlag.png" alt="logo" width="42" height="28"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!-- De tekst binnen de hero-banner op de voorpagina-->
+      <div class = "hero-div center">
+        <h1>Frontend Design en Development<br/></h1><br/>
+        <h3>Een website over het vak FDD en het ontwerpproces van deze website</h3>
+<!-- De buttons die op de hero-banner staan-->
+        <div class = "banner-btns">
+          <button class = "btn1" onclick="window.location.href='https://fdd.che-ict.nl/2122/jnsmits/#FDD'">Kom meer te weten over FDD</button>
+          <button class = "btn2" onclick="window.location.href='https://fdd.che-ict.nl/2122/jnsmits/#Contact'">Neem contact op</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- De header is gesloten en we beginnen aan de eerste detailsectie: FDD-->
+    <section class = "FDD" id = "FDD">
+      <br/>
+      <br/>
+       <h2>Frontend Design en Development</h2><br/>
+       <p class = "p_info">In deze tab bar geef ik uitleg van de theorie die tijdens de lessen FDD op de CHE zijn behandeld.</p>
+       <br><br/>
+           
+       <!-- Hier begint het tabmenu voor de detailpagina-->
+       <div class="tab">    
+    <button class="tablinks" onclick="informatie1(event, 'InteractionDesign')" id = "defaultOpen" >Interaction Design</button>
+    <!-- In bovenstaande regel staat id= defaultOpen. Dit houdt in dat 
+    wanneer je de website bezoekt, de informatietab Interaction Design al open staat-->
+      <button class="tablinks" onclick="informatie1(event, 'Wireframing')">Wireframing en Interfaces</button>
+    <button class="tablinks" onclick="informatie1(event, 'Usability')">Usability Testing</button>
+    <button class="tablinks" onclick="informatie1(event, 'Grafischdesign')">Grafisch design en Accessibility</button>
+    <button class="tablinks" onclick="informatie1(event, 'HTML')">Introductie HTML</button>
+    <button class="tablinks" onclick="informatie1(event, 'CSS')">CSS en Frameworks</button>
+
+
+  </div>        
+  <br/><br/>
+
+  <!-- De eerste tab met daarin de content-->
+  <div id="InteractionDesign" class="tabcontent">
+    <div class = "FDD-stuk">
+        <h2>Interaction Design</h2>
+        <h3>Week 1</h3>
+        <div class = "lijn"></div>
+        <p class = "text"> 
+          <b>Introductie</b><br/>
+          Voordat ik begin met het onderwerp interaction design, leg ik even kort uit waarom deze website gemaakt is en wat het vak FDD is.<br/>
+          Voor het vak Frontend Design en Development (FDD) zijn we vanaf de eerste lesweek bezig geweest met het maken, ontwikkelen en vormgeven van een eigen website, waarin je de lesstof en het ontwerpproces beschrijft. <br/>
+         <br/> <b>Wat is FDD?</b><br/>
+          FDD bestaat uit Frontend Design en uit Development. Frontend Design gaat over het "vooraanzicht" van een website. Eigenlijk hetgeen wat je als gebruiker ziet wanneer je een website of app bezoekt. Met design geef je de frontend vorm, kleur en uitstraling. <br/>
+          Het woord development geeft aan, dat je website of app door middel van testen en het verrichten van aanpassingen je frontend verbeterd wordt.
+          <br/><br/>
+    <b>Wat is Interaction Design?</b><br>Als we het hebben over Interaction Design, dan praten we over een onderdeel van User Experience Design. User Experience Design kenmerkt de gebruikerservaring in zijn geheel van een digitaal product, denk aan een website, applicatie, webapp, etc. Interaction Design richt zich juist op het gedeelte van de interactie tussen de gebruiker en het digitale product. Het product moet voor de gebruiker juist leuk en interessant zijn. Een goed grafisch design; een goed visueel ontwerp, details en communicatie zijn van belang voor een goede gebruikerservaring. Als een design er aantrekkelijk uitziet, blijft de gebruiker graag op je website.  
+        Kortom, een UX Designer onderzoek en ontwerp je de beste gebruikerservaring en een IX Designer bedenkt een concept voor interactie tussen de gebruiker en het product. <br/><br/>
+        Als onderdeel van een van de leertaken van de afgelopen weken moest er een toets over Interaction Design gemaakt worden. Klik <a class = "link_bewijstoets" target="_blank" href="img/bewijstoetsIXD.png" title="">hier</a> om mijn resultaat van de toets te bekijken. <br/>
+        <br><b>Usability</b><br/>
+        Usability gaat over hoe gebruiksvriendelijk een website of ander digitaal product is. Verder over hoe uitdagend het is voor een bezoeker om verder te klikken, te scrollen of te swipen. Je zorgt er dus met usability voor dat de klant een optimale gebruikerservaring heeft.  
+        <br><br>
+        <b>Accessibility</b><br/> 
+        Een ontwerp is pas bruikbaar, wanneer het toegankelijk is voor de gebruiker. Ontwerpers van bijvoorbeeld een website moeten rekening houden met de toegang tot de website. Wanneer dit lukt, stelt ook mensen met bijvoorbeeld een handicap in staat om wat er op jouw website staat waar te nemen. Mensen met een visuele handicap kunnen lastig tot geen tekst lezen op jouw website. Een mooie oplossing is dan om schermleessoftware te gebruiken, zodat zij wel woorden kunnen horen, en toch de gegeven informatie op de website meekrijgen.
+        </p>
+        </div>
+
+        <!-- Hier zorg ik voor een tweede wit tekstvak-->
+        <div class = "FDD-stuk">
+            <p class = "text"> 
+        <b>Wireframing</b><br/>
+        Een wireframe is een visueel instrument voor het ontwikkelen van een website of applicatie. Je kunt het ook wel zien als een bouwtekening van de website. In deze bouwtekening zullen de verschillende onderdelen die op de website aanwezig zullen zijn staan. 
+        Wireframes worden ingezet nadat de doelstellingen van de website bekend zijn, dan kunnen de ideeen in wireframes uitgewerkt worden. Met wireframes kun je voor jezelf een helder beeld krijgen of het idee goed is uitgwerkt, maar ook of de website aan de gebruiksvriendelijkheid voldoet. 
+        Om een wireframe te maken, kun je pen en papier gebruiken, maar er zijn ook een aantal programmes die je hierbij kunnen helpen als Balsamiq of Adobe Design. 
+</p>
+</div>
+<!-- Wit tekstvak met daarin een plaatje van designthinking-->
+<div class = "FDD-stuk">
+  <h2>Design Thinking</h2><br/>
+  <!-- Tag voor het plaatsen van een afbeelding-->
+  <img class = img_designthinking src="img/designthinking.jpg" alt="Design Thinking"><br/>
+  <!-- Onder de tekst staat de bronvermelding-->
+  <i><a href = "https://www.nngroup.com/articles/design-thinking/"> Nielsen Norman Group (2016).</a></i> Design Thinking [Afbeelding]
+
+  </div>
+
+<!-- Hier heb ik gebruik gemaakt van geanimeerde containers om Design Thinking weer te geven, zodat er 3 tekstblokken op een rij staan-->
+        <div class = "container">
+    <div class = "designthinking">
+      <div class = "FDD-stuk">
+        <h2>Empathize en Define</h2>
+        <p class = "text">  Als eerste moet een Interaction Designer weten voor welke doelgroep ze een product ontwerpen en wat het doel moet zijn van het product. Er vindt daarom dus eerst onderzoek plaats naar de gebruiker van het product. In onderstaande afbeelding wordt daarom begonnen met de Empathize fase, er wordt een grote hoeveelheid informatie tijdens deze fase opgenomen, die voor belang zijn in de volgende fasen van het project.
+<br/>  In de Define fase worden de verzamelde ideeën en informatie geanalyseerd met als doel hoe ze effectief kunnen worden gebruikt.
+</p>
+      </div>
+
+      <div class = "FDD-stuk">
+        <h2>Ideate en Prototype</h2>
+        <p class = "text">  
+<br/>  Vervolgens worden tijdens de Ideate fase alle informatie uit de vorige fasen gebruikt om ideeën te genereren. Ideeën die geheel out of the box kunnen zijn, of juist enorm logisch. Het is van belang om genoeg ideeën op papier te hebben, zodat je een ruime keuzemogelijkheid hebt. <br/>
+</p> Na de Ideate fase, gaan we verder met de Prototype fase. In deze fase wordt er gewerkt aan een vroeg model van het product die het probleem zou moeten kunnen oplossen. In deze fase wordt ook onderzocht hoe elk prototype het probleem zou moeten oplossen. Wanneer er problemen worden ontdekt, is het belangrijk dat deze worden opgelost, zodat men verder kan met de laatste fase, Test.
+      </div>
+
+      <div class = "FDD-stuk">
+        <h2>Test en Implement</h2>
+        <p class = "text"> 
+<br/>  De vijfde en laatste fase heet Test. Tijdens deze fase test de Designer het prototype gemaakt in fase vier. Er wordt gekeken of het betreffende protoype het probleem oplost wat in fase één en twee is geanalyseerd. Mocht dit niet het geval zijn, kan er net zo lang terug worden gegaan naar vorige fasen, totdat het probleem is opgelost en het eindproduct naar alle eisen voldoet.
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Dit is de tweede tab met daarin de content-->
+  <div id="Wireframing" class="tabcontent">
+    <div class = "FDD-stuk">
+        <h2>Wireframing en Interfaces</h2>
+        <h3>Week 2</h3>
+        <div class = "lijn"></div>
+        <p class = "text"> 
+    <p><b>Wireframes</b><br/>
+  Een wireframe is een visueel instrument voor het ontwikkelen van een website of applicatie. Je kunt het ook wel zien als een bouwtekening van de website. In deze bouwtekening zullen de verschillende onderdelen die op de website aanwezig zullen zijn staan. Bij wireframes gaat het om organisatie en structuur, stijldetails komen pas later aan bod.<br/><br/>
+  Wireframes worden ingezet nadat de doelstellingen van de website bekend zijn, dan kunnen de ideeen in wireframes uitgewerkt worden. Met wireframes kun je voor jezelf een helder beeld krijgen of het idee goed is uitgwerkt, maar ook of de website aan de gebruiksvriendelijkheid voldoet. Een andere reden om wireframes te maken, is om anderen makkelijk en snel je idee te laten zien.<br/><br/>
+  Om een wireframe te maken, kun je pen en papier gebruiken, maar er zijn ook een aantal programmes die je hierbij kunnen helpen als Balsamiq of Adobe Design. <br><br>
+  </p>
+</div>
+  <div class = "FDD-stuk">
+    <p class = "text"> 
+  <b>Soorten wireframes</b><br/>
+  Wireframes worden meestal opgedeeld in drie categorieën: low-fidelity, mid-fidelity en high-fidelity. Het woord fidelity geeft aan hoeveel details het ontwerp bevat. <br/><br/>
+  Low-fidely wireframes zijn vaak ruwe lijnen die met name gericht zijn op de lay-out. Voor low-fidely wireframes is het niet noodzakelijk om te werken in een computerprogramma want daarvoor kun je ook op papier aan de slag. Bij low-fidely wireframes moet je je ontwerp dus eenvoudig houden. Laat daarom afbeeldingen, vultekst en pictogrammen weg.<br/><br/>
+  Bij mid-fidely wireframes moet de focus worden gelegd op de schaal en de grootte van de elementen in verhouding tot het werkvenster. Het werkt de schetsen van een low-fidely wireframe uit tot een meer gedetaileerde vorm van het ontwerp. Stijl komt nog minstens aan bod. Je gebruikt daarom nog geen kleur en lettertypes, zo krijg je bijvoorbeeld met je projectteam of opdrachtgever nog geen discussies over het design. <br/><br/>
+  Tot slot hebben we high-fidely wireframes. Bij dit soort wireframes draait alles om nauwkeurigheid. Het ontwerp begint op je eindproduct te lijken. Elk element moet zich op de juiste plek bevinden. Elk menu en elke knop moet functioneel zijn voor de gebruiker. De functionaliteit van een high-fidely wireframe ligt anders dan bij low- en mid-fidely wireframes. Bij high-fidely wireframes gebruiken ontwerpers het ontwerp juist om de opdrachtgever het eindontwerp goed te laten keuren. <br/><br/>
+  </p>
+</div>
+  <div class = "FDD-stuk">
+    <p class = "text"> 
+  <b>7 stappen tot het maken van een goede wireframe</b><br/>
+  Begin met woorden. Wat heb je nodig om tot het eindproduct te komen?<br/><br/>
+  1.	Bedenk voor wie je het maakt. In het geval voor deze website voor eerstejaars studenten die mogelijk geïnteresseerd zijn in deze studie. Of misschien voor jezelf, om te oefenen met deze termen en het oefenen met HTML en CSS.<br/><br/>
+  2.	Bedenk waarom je het maakt en wat het doel van je product is. Je kan bijvoorbeeld denken aan; bewijs van je competenties, ervaring opdoen, iets leren of gewoon om je studiepunten binnen te halen. <br/><br/>
+  3.	Bedenk welke (inter)acties er nodig zijn. <br/><br/>
+  Denk aan:<br/>
+  -	Navigeren naar volgende pagina’ s op de website.<br/>
+  -	Hyperlinks naar andere websites.<br/>
+  -	Contactformulier<br/>
+  -	Reageren op de website<br/>
+  -	Bel en mailfuncties<br/>
+  -	Filmpjes<br/><br/>
+  4.	Creëer een sitemap. Hoe ga je via de ene naar de andere pagina? <br/><br/>
+  5.	Welke zaken zijn van belang? Denk bijvoorbeeld aan de wensen van de klant of de opdrachtgever.<br/><br/>
+  6.	Gebruik een ontwerp, of een bestaand ontwerp waar je ideeën van kunt opdoen.<br/><br/>
+  7.	Tot slot is het belangrijk dat je je laat inspireren!<br/><br/>
+  </p>
+  </div>
+  </div>
+
+  <!-- De derde tab met daarin de content-->
+  <div id="Usability" class="tabcontent">
+    
+    <div class = "FDD-stuk">
+        <h2>Usability Testing</h2>
+        <h3>Week 3</h3>
+        <div class = "lijn"></div>
+        <p class = "text"> 
+    <p><b>Wat verstaan we onder Usability Testing?</b><br/>
+  Met behulp van Usability tests, kan de gebruiksvriendelijkheid van bijvoorbeeld websites, apps of een ontwerp getest worden. Je laat een testpersoon individueel verschillende taken uitvoeren op je digitale product, waarbij het ontwerp van website wordt getest en tot slot om feedback van de gebruiker vraagt. Het is een effectieve en leerzame manier van testen om de gebruiksvriendelijkheid van je digitale product te verbeteren. 
+  Usability testing is belangrijk omdat mensen van een website afhaken, wanneer zij onnodige barrières opgelegd krijgen. Als mensen zich niet betrokken voelen bij je website, dan komt men niet meer terug. Daarom kan er met behulp van usability tests getest worden of je doelgroep je website gebruikt zoals je dat voor ogen hebt. 
+    </p>
+</div>
+<div class = "FDD-stuk">
+    <p class = "text"> 
+  <b>Hoeveel gebruikers zijn er nodig voor een succesvolle Usability Test?</b><br>
+</p>
+
+  <img class = img_testusers src="img/testusers.gif" alt="Aantal testusers">  <br/>
+<p>
+  Er gaat geregeld de vraag rond hoeveel mensen er nodig zijn voor een geslaagde Usability test. In de grafiek hiernaast (<i><a href = "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/"> Nielsen Norman Group</a> (2000) Why You Only Need to Test with 5 Users [Afbeelding])</i> kun je aflezen dat vijf users al 80% van de fouten ontdekt heeft. Bij een enkele testgebruiker heb je al bijna een derde van de fouten ontdekt. Een tweede gebruiker zal de ontdekte fouten van de eerste test ook naar voren halen, maar zal ook <br/>met nieuwe fouten terugkomen, die de eerste user niet heeft waargenomen. Een derde gebruiker zal veel fouten zien die bij de eerste twee gebruikers <br/>al zijn waargenomen. Uiteraard zal de derde gebruiker een kleine hoeveelheid nieuwe fouten zien, maar lang niet zoveel als de eerste en tweede gebruiker. 
+  Naarmate er meer gebruikers worden betrokken bij de Usability test, zul je in verhouding steeds minder nieuwe fouten ontdekken, en hoor je steeds weer dezelfde fouten terugkomen.  Na de vijfde gebruiker is het zonde van je tijd door dezelfde bevindingen meermaals aan te zien. 
+</p>
+  </div>
+  <div class = "FDD-stuk">
+    <p class = "text"> 
+  <b>Wat moet je doen tijdens de Usability Test?</b><br/>
+  1.	Stel een vraag tegelijk.<br/>
+  2.	Gebruik geen suggestieve vragen. Dus NIET vind je het ook zo te klein? MAAR Wat vind je van de maat?<br/>
+  3.	Observeer en draag zorg voor interactie.<br>
+  4.	Wees stil<br/>
+  5.	Zorg voor een notulist en een aparte begeleider. Dus testpersoon, notulist en de vragensteller.<br/>
+  6.	De gebruiker heeft altijd gelijk. <br/><br/>
+  <b>Drie rollen voor de test</b><br/>
+  -	User. Dit is de gebruiker en testpersoon van je website. <br>
+  -	Moderator. Dit is degene die het ontwerp heeft gemaakt. De moderator stelt de vragen en leidt de usability test in. <br/>
+  -	Observer. Dit is de notulist die tijdens de test aantekeningen maakt van de feedback die de user geeft over het ontwerp. <br/>
+  Meestal bevinden de user, moderator en observer zich in één ruimte. Dit maakt het makkelijker om lichaamstaal, gebaren en gezichtsuitdrukkingen vast te leggen en mee te nemen in het eindoordeel. Een andere opstelling kan zijn dat de ruimte van de observer heel stuk verderop ligt, want dat zorgt voor minder druk voor de user. Bovendien horen de user en de moderator de observer dan niet. 
+</p>
+</div>
+<div class = "FDD-stuk">
+    <p class = "text"> 
+  <b>Belangrijk tijdens een Usability Test</b><br/>
+  Maak allereerst een testscript. Hierin ben je de test aan het inleiden en bedank je dat de user mee wilt werken aan de test.  Je vermeld dat je het design test, en dus niet de gebruiker. Vervolgens schets je de context situatie. Je vermeld bijvoorbeeld dat dit een website is voor mogelijk aankomende eerstejaars studenten die geïnteresseerd zijn in de opleiding HBO-ICT aan de CHE. Tot slot vermeld je dat alle feedback welkom is.  Handig om te weten is, dat je de gebruiker door deze informatie op zijn gemak stelt. Maak bijvoorbeeld gebruik van een kop koffie en maak met elkaar kennis voordat je de test start.  
+  Tijdens de test geef je verschillende taken aan de gebruiker. Je kan bijvoorbeeld de opdracht geven dat de user een overzicht moet krijgen van wat het vak Fronted Design en Development (FDD) inhoudt. 
+  Geef tijdens de test ook alternatieven (Een AB test noem je dat. Dus de eerste testpersoon geef je eerst contactformulier A en dan contactformulier B en de tweede testpersoon juist andersom) Vaak vinden mensen het tweede alternatief beter. 
+</p>
+</div>
+<div class = "FDD-stuk">
+    <p class = "text"> 
+  <b>Nog drie belangrijke tips voor tijdens de test:</b><br/>
+  1.	Laat je gebruikers ervaren en observeer met name wat de users doen.<br>
+  2.	Vraag de gebruikers na hun taak vertellen over hun ervaring.<br>
+  3.	Vraag follow up vragen en verdieping.<br/>
+  Afsluitend deelt de user de ervaringen van de website en stel je nog een aantal afsluitende vragen en bedankt je de user voor zijn tijd en moeite voor zijn deelname. 
+</p>
+</div>
+
+<div class = "FDD-stuk">
+    <p class = "text"> 
+        <b>Return on Investment</b><br/>
+ Tot slot nog informatie over het begrip Return On Investment (ROI). Dit begrip geeft de verhouding weer tussen opbrengsten en investeringen. Vaak wordt dit uitgedrukt in een percentage. Wanneer een bedrijf 2000 euro aan investeringen heeft uitgegeven en er 4000 euro mee heeft verdiend, dan heeft dat bedrijf een ROI van 200%. 
+<br/><br/>
+ Wat krijg je ervoor terug als je ergens in investeert?<br/>
+  -	Naamsbekendheid, populariteit en een goede reputatie betekend meer geld voor de onderneming en dus meer omzet.<br/>
+  -	Tijd. Gebruikers van een website willen bijvoorbeeld zo snel mogelijk antwoord hebben op vragen. Denk bijvoorbeeld aan een contactformulier op je website. Hartstikke handig, maar vaak krijgt de klant niet direct antwoord. Een chatbot op je website is dan een goed alternatief. <br>
+  -	Tevreden gebruikers. Wanneer gebruikers van een wesbite tevreden zijn, zullen zij in de toekomst vaker terugkomen naar jouw website en dit bouwt een vaste klantenkring op.<br>
+  -	Vertrouwen. Als je een goede website hebt die voldoet aan de verwachtingen van de gebruiker, dan geeft dat vertrouwen.<br/>
+
+</p>
+  </div>
+</div>
+
+<!-- De vierde tab met daarin de content-->
+  <div id="Grafischdesign" class="tabcontent">
+    <div class = "FDD-stuk">
+        <h2> Grafisch design en Accessibility</h2>
+        <h3>Week 4</h3> 
+        <div class = "lijn"></div>
+        <p class = "text"> 
+    <p><b>Wat is grafisch design eigenlijk?</b><br/>
+      Grafisch design is het visueel vormgeven van ideeën in verschillende media. Met als doel om mensen iets mee te delen. Dit vereist zowel artistieke als technische vaardigheid. Een goed grafisch design zorgt voor bruikbaarheid, begrijpbaarheid en voor emotie van je ontwerp.<br/><br/>
+      Bij een grafisch ontwerp moeten mensen je ontwerp kunnen snappen. Wanneer er uitleg van de designer nodig is, dan is het geen goed ontwerp. Het moet voor de gebruiker duidelijk zijn hoe je de website moet bedienen.  <br/><br/>
+      Wanneer je begint met ontwerpen moet je je afvragen hoe je informatie op de gebruiker wilt laten overbrengen. Je kunt de website vullen met veel tekst, maar dan moet je echter rekening houden dat de meeste mensen zeker 20-28% van de woorden op jouw pagina lezen. Een handig alternatief zou een video kunnen zijn, want 80% kijkt een video op de betreffende pagina. <br/><br/>
+      Wat ook niet onmisbaar is tijdens het grafisch ontwerpen van jouw pagina is de overweging welke sfeer jouw website moet uitstralen, de leesbaarheid van de website (denk erom dat kleurcontrast moet kloppen), welke font er gebruikt gaat worden en hoe de website moet uitstralen. <br/><br/>
+      Je kunt in een aantal digitale programma’s je grafisch design uitwerken. Voorbeelden hiervan zijn: Photoshop, Adobe XD, Figma, Axure, Sketch en InVisionapp. <br/><br/>
+      </p>
+    </div>
+
+      <div class = "FDD-stuk">
+        <p class = "text"> 
+      <b>Accessibility</b><br/>
+      Of denk aan hoe mensen informatie tot zich nemen. Iedereen met of zonder beperking heeft toegang tot bepaalde voorzieningen. 
+      Voor mensen met ADHD of autisme is het handig om je website simpel te houden. Voor mensen met een visuele beperking is het belangrijk dat de website een screen reader bevat. Of mensen die een auditieve beperking hebben, dan is het handig om ondertiteling te gebruiken voor video’s die op je website staan. Mensen die een fysieke beperking hebben en tekst moeten typen, daarvoor kan een spraak naar tekst functie goed van te pas komen. Er zijn dus talloze mogelijkheden om voor iedereen je website toegankelijk te maken, alleen hoe ver ga je?<br/><br/>
+      Bij de functie van ondertiteling hebben veel meer mensen profijt dan die kleine groep mensen slechthorenden. Als je bijvoorbeeld in een luidruchtige treincoupe zit, dan vinden mensen het ook fijn om van ondertiteling gebruik te maken. Je zal dus voor jezelf een afweging moeten maken afhankelijk van je doelgroep en welke functies je belangrijk vind voor je website.<br/><br/>
+     </p>
+     </div>
+     
+      <div class = "FDD-stuk">
+        <p class = "text"> 
+      <b>Gestaltprincipes</b> <br/>
+      Er zijn een aantal simpele ontwerpprincipes voor je website waardoor je interessantere en boeiendere visuele ervaringen creëert. Deze ontwerpprincipes heten namelijk de Gestaltprincipes, want door deze goed toe te passen worden gebruikers (onbewust) geholpen in het bereiken van hun doel.<br/> Ik bespreek er drie:<br/><br/>
+      -	Principe van nabijheid/proximity<br/>
+      In onderstaande afbeelding zie je aan de linkerkant een grote groep met bolletjes en aan de rechterkant een dezelfde hoeveelheid bolletjes, maar dan verdeeld in drie kleinere, gelijke groepjes. In bijvoorbeeld navigatiemenu’s staan veel onderwerpen die staan gegroepeerd, zodat de gebruiker alle informatie die overbodig is kan negeren. Dit wordt namelijk toegepast in websitemenu’s. Wanneer een gebruiker opzoek is naar muziek en binnen de categorieën van het menu staan gegroepeerd films, games en muziek, dan kan de gebruiker de eerste twee kolommen negeren en dus focussen op de laatste kolom.  
+      Kortom, zorg ervoor dat elementen die inhoudelijk bij elkaar horen, ook bij elkaar worden geplaatst.<br/><br/>
+      <img class = img_gestalt1 src="img/gestalt1.png" alt="Gestaltprincipe nabijheid"><br/>
+      <i><a href = "https://www.doubleweb.nl/5-principes-voor-een-betere-gebruikservaring-op-je-website/"> DoubleWeb (2020).</a></i> Principes voor een betere gebruikservaring op je website, nabijheid [Afbeelding]<br/><br/>
+      -	Principe van gelijkenis/simularity<br/>
+      In de afbeelding hieronder ziet men elementen die op elkaar lijken als geheel. Vrijwel ieder mens zal dit plaatje opvatten als horizontale rijen met zware bolletjes en witte bolletjes. Weinig mensen zullen hier verticale rijen met zwarte en witte bolletjes door elkaar van maken.
+      Dus zorg ervoor dat elementen die qua inhoud of functie gelijk zijn, ook visueel op elkaar moeten aansluiten.<br/><br/>
+      <img class = img_gestalt2 src="img/gestalt2.png" alt="Gestaltprincipe gelijkenis"><br/>
+      <i><a href = "https://www.interaction-design.org/literature/article/the-law-of-similarity-gestalt-principles-1"> Interaction Design Foundation (2020).</a></i> The Law of Similarity [Afbeelding]<br/><br/>
+<br/>
+      -	Principe van sluiting/closure<br/>
+      Dit principe laat zien dat mensen de neiging hebben om incomplete of gedeeltelijk bedekte figuren te zien als volledig. Hoewel er in de afbeelding hieronder stukjes zijn weggelaten zul je toch een cirkel en een rechthoek herkennen.  <br/>
+      Bij veel apps worden notificaties weergegeven die voor een gedeelte overlappen met het icoon van de app. Dus wanneer er beperkte ruimte mocht zijn om iets weer te geven is het mogelijk om figuren te laten overlappen. <br/>
+      <img class = img_gestalt3 src="img/gestalt3.png" alt="Gestaltprincipe sluiting"><br/>
+      <i><a href = "https://en.m.wikipedia.org/wiki/File:Gestalt_closure.svg"> Wikipedia File (2008).</a></i> Gestalt Closure [Afbeelding]<br/><br/>
+
+
+    </p>
+      </div>
+
+  </div>
+
+  <div id="HTML" class="tabcontent">
+    <div class = "FDD-stuk">
+        <h2>Introductie HTML</h2>
+        <h3>Week 5</h3>
+        <div class = "lijn"></div>
+        <p class = "text"> 
+          In onderstaande video wordt kort maar duidelijk uitgelegd wat HTML precies is.<br/><br/>
+          <iframe width="314" height="176" src="https://www.youtube.com/embed/xRVO5glwffE" title="YouTube video player" allowfullscreen></iframe>  
+<br/>
+<i>Bron: YouTube, Codecafé (2021).</i><br/><br/>  
+          De drie talen op een rijtje:<br/>
+HTML is voor de documentstructuur.<br/>
+CSS is voor de opmaak.<br/>
+JavaScript is voor de dynamische functionaliteit
+</p>
+</div>
+</div>
+
+<div id="CSS" class="tabcontent">
+  <div class = "FDD-stuk">
+      <h2>CSS en Frameworks</h2>
+      <h3>Week 6</h3>
+      <div class = "lijn"></div>  
+      <p class = "text"> 
+        </p>
+        <br><b>Box model</b><br/>
+        Het box model, waarin elk html element geplaatst wordt - heeft een marge (margin), een rand (border) en een opvulling (padding). Van deze drie kenmerken kan de 'dikte' voor alle vier de zijden worden bepaald. Cascading Style Sheets (CSS) gaat ervan uit dat elk element staat in een rechthoekig gebied, de box. <br/>Van binnen naar buiten bestaat de box uit:<br/>
+        -	De inhoud van het element (content)<br/>
+        -	De padding<br/>
+        -	De border <br/>
+        -	En tot slot de margin.<br/><br/>
+         <img class = img_boxmodel src="img/boxmodel.png" alt="Boxmodel" /><br/>
+        <i><a href = "https://medium.com/@jkhaha/what-is-the-css-box-model-3b3901d8fb33"> Jackie Ha (2019).</a></i> What is the CSS Box Model? [Afbeelding]<br/><br/>
+        <b>Positionering</b><br/>
+        Om bepaalde elementen in je html pagina goed te positioneren, moet je de juiste positon tag gebruiken. Ik bespreek drie belangrijke postion tags.<br/><br/>
+      <br/>  static: Een element met position: static; is niet op een speciale manier gepositioneerd. <br/>
+        
+      <br/>  relative: De positie relative gedraagt zich hetzelfde als static, tenzij je nog een aantal extra verhoudingen toevoegt (denk aan top, right, bottom en left), want dan zal de positie aangepast worden ten opzichte van zijn originele positie. <br/>
+      <br/>  fixed: Een fixed element is relatief gepositioneerd ten opzichte van de viewport, wat inhoud dat dit element altijd op dezelfde plek staat ongeacht of de pagina wordt gescrold.<br/>
+        
+      <br/> <b>Flexbox</b><br/><br/>
+        In onderstaande video wordt de flexbox in CSS duidelijk en helder uitgelegd. <br/>
+        <iframe width="314" height="176" src="https://www.youtube.com/embed/K74l26pE4YA" title="YouTube video player" allowfullscreen></iframe>  
+        <br/>  <i>Bron: YouTube, Fireship (2020)</i><br/><br/>
+        <b>Wat zijn CSS Frameworks?</b><br/>
+        CSS-frameworks zijn tools die door UI-ontwikkelaars worden gebruikt om hun werk gemakkelijker te maken. In plaats van tijd te besteden aan het beginnen met een leeg document, hebben ontwikkelaars de mogelijkheid om snel gebruikersinterfaces op te starten en eigen aanpassingen daarin toe te passen. <br/>
+      <br/> <b> Hoe kom je aan Frameworks?</b><br/>
+        Het internet staat hier vol mee. Je kunt er allerlei vinden op websites als;<br/>
+        -	Getbootstrap.com voor CSS en JS frameworks.<br/>
+        -	Tailwindcss.com voor CSS frameworks.<br/>
+        -	Bulma.io voor CSS frameworks.<br/>
+        -	En milligram.io voor CSS frameworks.<br/><br/>
+        <b>Toegankelijkheid meten van je website</b><br/>
+        Wanneer je wilt weten of het contrast op je website voldoende en voor iedereen te lezen en te zien is, kun je gebruik maken van accessibility tools. Een handige tool is lighthouse.
+        Om lighthouse te bereiken moet je het volgende uitvoeren;<br/>
+        -	Ga naar de website die je wilt testen op toegankelijkheid.<br/>
+        -	Druk op F12.<br/>
+        -	Ga naar Lighthouse.<br/>
+        -	Klik alleen accessibility aan.<br/>
+        -	Kies tot slot je device; desktop of mobile.
+        
+        </div>
+        </div>
+
+        <script>
+          function informatie1(evt, tekst) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tekst).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          document.getElementById("defaultOpen").click();
+        
+          </script>
+        
+
+       
+    </section>
+
+    <!-- De sectie is tot zijn einde gekomen en we beginnen een nieuwe sectie 
+    met daarin informatie over het ontwerpproces-->
+    <section class = "Ontwerp" id = "Ontwerp">
+        <h2>Ontwerpproces</h2><br/>
+        <p class = "p_info">In dit uitklapmenu is er te lezen over mijn designproces. Denk aan wireframes, een moodboard en een grafisch design.</p>
+        <br><br/>    
+
+        <!-- Hier heb ik gekozen voor uitklapbare stukjes tekst om het ontwerpproces te laten zien-->
+        <div class="hoofdstuk">
+            <input id="hoofdstuk-one" type="checkbox" name="hoofdstukken">
+            <!-- Het eerste blokje met tekst-->
+            <label class="chapterlabel" for="hoofdstuk-one">Sitemap</label>
+            <div class="hoofdstuk-content">
+                <div class = "FDD-stuk" >
+                    <p class = "text">  
+                       <b> Sitemap</b><br/><br/>
+                        Een eerste schets voor je website bestaat uit een sitemap. Een sitemap is eigenlijk een overzicht van alle
+                        interne links binnen jouw website. Dit kun je maken in de vorm van een document of een uitgetekende
+                        plattegrond. Hierdoor krijg je voor jezelf een goed beeld van welke pagina’s er op jouw website moeten
+                        komen. Met behulp van de toetsbeschrijving voor dit vak, ben ik op de hoogte welke pagina’s en informatie er
+                        op mijn website moet komen. In onderstaande afbeelding is mijn gemaakte sitemap te zien. <br /><br />
+                        Via de homepage kun je navigeren naar vier pagina’s: Frontend Design en Development, Ontwerpproces,
+                        Development en Contact. Binnen Frontend Design en Development kun je vrij navigeren naar andere pagina’s,
+                        maar bij bijvoorbeeld de pagina Ontwerpproces moet je eerst langs de pagina sitemap om vervolgens naar de
+                        pagina over Balsamiq te navigeren. <br /><br />
+                        Het maken van de sitemap verliep goed. Alle informatie die ik in de sitemap wilde toevoegen staat erin.
+                        Alleen zou ik voor de volgende keer de sitemap via een website maken die daarvoor bestemd is. Nu heb ik de
+                        sitemap gemaakt in Balsamiq, wat overigens ook prima is, maar voor een nog beter overzicht en resultaat maak
+                        ik hem liever met een online tool.
+                        <br /><br />
+                        <img class = img_sitemap src="img/sitemap.png" alt="Sitemap">
+                    </p>
+            </div>
+            </div>
+            </div>
+              <!-- Het tweede blokje met tekst-->
+            <div class="hoofdstuk">
+            <input id="hoofdstuk-two" type="checkbox" name="hoofdstukken">
+            <label class="chapterlabel" for="hoofdstuk-two">Wireframes in Balsamiq</label>
+            <div class="hoofdstuk-content">
+                <div class = "FDD-stuk">
+                    <p class = "text">  
+                        <b>Balsamiq</b><br/><br/>
+                        In lesweek 2 ben ik aan de slag gegaan met wireframing. Op de informatiepagina over wireframes wordt de
+                        theorie van wireframes besproken, hier zal ik ingaan op het ontwerpproces ervan. Het maken van mijn eerste
+                        wireframe deed ik in het programma <a target="_blank" href="https://balsamiq.com/" title="Balsamiq">Balsamiq</a>. Ik kende het programma nog niet, maar al gauw zodra ik het
+                        geïnstalleerd had merkte ik dat het erg handig te gebruiken is, zonder enige ervaring. <br /><br />
+                        Met behulp van de sitemap ben ik begonnen met het ontwerpen van de homepage. Al gauw had ik een overzicht
+                        van de header. Ik wist al van te voren dat ik een banner op de homepagina wilde, omdat een goede banner je
+                        website een kenmerk geeft. Bovendien vult dit je homepage op en naar mijn mening is dit een must voor je
+                        homepage. Vervolgens heb ik op de homepage drie kolommen aangemaakt van onderwerpen die er op de website te
+                        vinden zijn, zodat de bezoeker al bij binnenkomst een goed beeld heeft van wat er op de website verwacht kan
+                        worden, en dit eventueel interesse opwekt om door te klikken naar een volgende pagina. Op de afbeelding
+                        rechts is het design van de homepage te zien. <br /><br />
+                        Vervolgens was de opdracht om ook een detailpagina te ontwerpen. De detailpagina die ik heb ontworpen waren
+                        de theoriepagina’s met informatie over het van FDD. Op de detailpagina staat dezelfde header van de
+                        homepagina. Voor het overbrengen van informatie heb ik gekozen voor een zogeheten “tab bar”, die bestaat uit
+                        verschillende tabbladen waar je informatie op kwijt kan. Dit is voor de gebruiker erg effectief, omdat een
+                        tab bar meteen een overzicht geeft van de onderwerpen en makkelijk van het ene tabblad naar het andere
+                        tabblad kan klikken. Zie linker afbeelding voor het ontwerp van de detailpagina. <br /><br />
+                        Hierna was als laatste de opdracht om een contactpagina in versie A en B te ontwerpen. In versie A heb ik
+                        gekozen voor een simpel contactformulier met slechts vier invoervelden, en aan de linkerkant andere
+                        mogelijkheden om in contact te komen. In versie B staat er ook een contactformulier, maar dan met zes
+                        invoervelden en contactinformatie aan de rechterkant (zie onderstaande afbeeldingen). Tijdens mijn usability
+                        test ging de voorkeur uit naar versie B, omdat je bij dit contactformulier meer informatie krijgt van degene
+                        die het formulier ingevuld heeft (telefoonnummer en emailadres, maar ook voornaam en achernaam).
+                        <br /><br />
+                        <img class=img_balsamiq1 src="img/balsamiq1.png" alt="Contactformulier A">
+                    <p>Contactformulier versie A</p>
+                    <img class=img_balsamiq2 src="img/balsamiq2.png" alt="Contactformulier B">
+                    <p>Contactformulier versie B</p>
+                    <br />
+                    <p>
+                    Tot slot heb ik mijn wireframe in Balsamiq uitgebreid en alle pagina’s toegevoegd en klikbaar gemaakt. En
+                    een EN/NE knop gemaakt en ook deze werkend tot stand gebracht, zodat tijdens de usability test van lesweek
+                    drie de pagina voor de gebruiker volledig werkt als ieder andere website.<br /><br />
+                    Dit onderwerp vond ik erg interessant en leerzaam. Ontwerpen heb ik al van jongs af aan leuk gevonden. Door
+                    de wireframe heb ik een goed beeld gekregen hoe mijn uiteindelijke website eruit zou moeten komen te zien en
+                    ziet er volgens mij en mijn medestudenten aantrekkelijk en duidelijk uit. Bij een volgend wireframe in
+                    Balsamiq zou ik daarom het ontwerpproces op precies dezelfde manier aanpakken. Echter zou ik voor een volgende keer wel wat meer en beter nadenken over wat ik wil gaan maken. Tijdens het maken van de wireframes heb ik elementen toegevoegd die mij leuk en interessant lijken, terwijl ik nog geen goed beeld had met wat ik op mijn website wil hebben. Daarom lijkt het mij voor de volgende keer verstandig om eerst een moodboard te maken, en daarna beginnen met wireframing <br /><br />
+                    Deze mid-fidelity wireframe is een goede basis geweest voor mijn grafisch ontwerp in Figma en mijn
+                    eindproduct. Want met behulp hiervan heb ik een duidelijk beeld en richtlijn hoe mijn eindproduct
+                    gerealiseerd moet worden.<br /><br />
+                    Tijdens het proces van wireframing heb ik ook nagedacht over of ik een desktop first of mobile first ontwerp en website wil ontwikkelen. Ik heb gekozen voor een desktop first design. 
+                </p>
+                <a target="_blank" href="pdf/Wireframes.pdf" title="">Klik hier om mijn wireframes in Balsamiq te openen</a>
+
+
+           
+            </div>
+            </div>
+            </div>
+
+            <!-- Het derde blokje met tekst-->
+            <div class="hoofdstuk">
+            <input id="hoofdstuk-three" type="checkbox" name="hoofdstukken">
+            <label class="chapterlabel" for="hoofdstuk-three">Moodboard</label>
+            <div class="hoofdstuk-content">
+                <div class = "FDD-stuk">
+                    <p class = "text">    
+                        <b>Moodboard</b><br/><br/>
+                        Ter voorbereiding op de les over Grafisch Design en Accessibility moest er een moodboard gemaakt worden. In
+                        het moodboard was het de bedoeling dat je een bepaalde sfeer overbrengt van het eindproduct dat je wilt
+                        maken. Met behulp van de digitale tool <a target="_blank" href="https://miro.com/" title="Miro">Miro</a>, heb ik het moodboard gemaakt. Van te voren wist ik al dat mijn
+                        website er zakelijk en strak uit moet komen te zien en dat de kleuren grijs en lichte kleuren blauw moeten
+                        zijn. <br /><br /> <img class = img_moodboard src="img/Moodboard.png" alt="Moodboard">
+            
+                        Allereerst begon ik met het opzoeken van blauwe kleurpaletten en ben ik bezig geweest met het zoeken van
+                        lettertypes die voor iedereen duidelijk te lezen zijn. Er staan twee verschillende lettertypes op het
+                        moodboard, namelijk Trebuchet en Open Sans.<br /> Het lettertype die ik uiteindelijk heb gebruikt is Open
+                        Sans, omdat dit lettertype bekend staat als één die veel gebruikt wordt voor websites, daarnaast is naar
+                        mijn mening Open Sans een stukje duidelijker te lezen. Hierna heb ik afbeeldingen opgezocht die duidelijk
+                        moeten maken hoe de homepagina eruit moet komen te zien. Tot slot wilde ik ook op het moodboard laten zien
+                        op welke manier ik de informatie wil tonen, ik heb daarom een afbeelding opgezocht van een tab-bar.
+                        <br /><br />
+                        De kleuren en lettertypes, maar bijvoorbeeld ook de ideeën van de homepagina heb ik meegenomen in het
+                        grafisch design in Figma. Het moodboard heeft daarom erg bijgedragen aan de verdere ontwikkeling van de
+                        website.<br /><br />
+                        Bij een mogelijk volgend moodboard wil ik graag eventuele andere kleuren en andere homepagina’s die mij ook
+                        interesseren ook in het moodboard zetten. Op deze manier heb ik meer keuzemogelijkheden en kan ik de
+                        verschillende ideeën tegenover elkaar zetten zodat ik tot een nog beter resultaat komen. <br /><br />
+                    </p>
+
+                    </div>
+                    </div>
+</div>
+                                <!-- Het vierde blokje met tekst-->
+                    <div class="hoofdstuk">
+                        <input id="chapter-four" type="checkbox" name="hoofdstukken">
+                        <label class="chapterlabel" for="chapter-four">Usability Test</label>
+                        <div class="hoofdstuk-content">
+                            <div class = "FDD-stuk">
+                                <p class = "text">  
+                                    <b>Usability Test</b><br/><br/>
+                                    Op vrijdagmiddag 24-09-2021 van 15.45 – 16.00 heeft er een Usability test plaatsgevonden voor het ontwerp in Balsamiq van mijn website. De user, observer en de moderator (ik) hebben op een rustige plek de test uitgevoerd, zodat we geen last hebben van eventueel storend omgevingsgeluid. Allereerst heb ik mij voorgesteld en de user bedankt voor zijn tijd en moeite. Vervolgens heb ik de user verteld dat bestemd is voor jongeren die mogelijk geïnteresseerd zijn in de opleiding HBO-ICT aan de CHE en dat we niet de user testen, maar het ontwerp van de website. Tot slot heb ik aangegeven dat het design nog niet af is en alle feedback welkom is. <br/><br/>
+                                    Het ontwerp in Balsamiq heb ik zo gemaakt, dat de gebruiker het ontwerp ervaart alsof degene een bestaande website bezoekt. De gebruiker kan binnen de header elke link aanklikken om een volgende pagina te bezoeken. De user heeft de volgende taken gekregen;<br/><br/>
+                                    - 	Is de voorpagina overzichtelijk?<br/>
+                                    -	Krijg je de weg naar de contactpagina?<br/>
+                                    -	Kun je het formulier invullen?<br/><br/>
+                             
+                                    De website beviel volgens de gebruiker over het algemeen goed. De user vond het overzicht van de homepage er logisch uitzien, de feature Engels/Nederlands en de shortcuts naar overige info sprak de gebruiker aan. Echter waren er nog wel een aantal verbeterpunten die door de gebruiker zijn opgemerkt. Zo stond er op de pagina FDD enorm veel tekst en dicht op elkaar. De user stelde daarom voor om daarom een afbeelding toe te voegen en de tekst groter te maken, waardoor de informatie makkelijker te lezen is. Tot slot gaf de user aan om de tab bar in het ontwerp werkend te maken en een kleurrijke achtergrond toe te voegen, want nu is het ontwerp nog wit en grijs.<br/><br/>
+                                    Als laatste heeft de gebruiker de opdracht gekregen om naar de contactpagina te gaan. De pagina zag er volgens hem strak uit en alle informatie die er in hoort te staan, stond erin. De user merkte alleen wel op dat de kolom ‘phone’ aangepast moest worden naar ‘phone number.’ Tot slot kreeg hij nog de keuze tussen contactformulier A en B. De voorkeur ging uit naar contactformulier B, omdat het formulier aan de linkerkant stond en er meer kolommen in stonden. Op deze manier krijg je een beter overzicht en meer informatie van degene die het formulier heeft ingevuld.<br/><br/>
+                                    De feedback die ik gekregen heb, waren goede verbeterpunten en zijn meegenomen in het ontwerp. Zo zijn de tab bars nu werkend, er is bij de pagina over het vak FDD een afbeelding toegevoegd en is de bijbehorende tekst groter gemaakt. De achtergrond heeft kleur gekregen en het woordje ‘phone’ is aangepast naar ‘phone number’. Met behulp van deze testuitslagen is mijn ontwerp van de front-end weer een stuk meer gebruiksvriendelijk gemaakt. <br/><br/>
+                                    <a target="_blank" href="pdf/SUS_test.pdf" title="">Klik hier om de resultaten van de SUS test te bekijken.</a>
+                                   <br/> <br/>Nogmaals enorm bedankt voor de medewerking en alle tijd. <br/><br/>
+                                    Tijdens een volgende usability test moet ik letten op dat ik niet teveel bezig ben met het presenteren van de website, maar juist mijn gebruiker laat ervaren en zelf observeer. Deze punten neem ik daarom mee voor een volgende usability test. 
+
+            </div>
+            </div> 
+            </div>
+
+                        <!-- Het vijfde blokje met tekst-->
+            <div class="hoofdstuk">
+                <input id="hoofdstuk-five" type="checkbox" name="hoofdstukken">
+                <label class="chapterlabel" for="hoofdstuk-five">Grafisch Design in Figma</label>
+                <div class="hoofdstuk-content">
+                    <div class = "FDD-stuk">
+                        <p class = "text">  
+                            <b>Grafisch Design in Figma</b><br/><br/>
+                            Nu is het tijd om een grafisch ontwerp te maken van mijn website. Gedurende dit proces heb ik gekozen om een single page design te ontwerpen en uiteindelijk te ontwikkelen in tegenstelling tot mijn wireframes in Balsamiq. Er is al heel wat werk aan vooraf gegaan,
+                            er is namelijk een mid-fidelity wireframe gemaakt, een moodboard, sitemap etc. Nu is het tijd om op
+                            high-fidelity niveau een grafisch ontwerp te maken, waarin elk detail van je website in staat verwerkt. Het
+                            grafisch ontwerp voor mijn webiste heb ik gemaakt met het prototyping-tool <a target="_blank" href="https://www.figma.com/" title="Figma">Figma.</a> <br /><br />
+                            Ik heb gekozen voor een single page website, omdat dit overzichtelijker oogt. Bovendien scrollen mensen liever dan dat ze klikken.
+                            Als eerste ben ik begonnen met het ontwerpen van mijn homepagina. Met behulp van mijn wireframe in Balsamiq
+                            ben ik grof de pagina gaan schetsen in Figma. De kleuren die ik op de website wil gebruiken heb ik daarna
+                            toegepast op de schets. Vervolgens ben ik een hero-banner gaan maken voor een pakkende homepagina. Toen was het tijd
+                            voor het maken van een footer en heb ik een logo voor de website ontworpen. Na het ontwerpen van de
+                            homepagina in Figma, merkte ik al een groot verschil met mijn wireframe in Balsamiq die er nog vrij kaal en
+                            grijs uitzag, met weinig detail.<br /><br />
+                            Daarna was het tijd om de detailpagina te ontwerpen. Vervolgens ben ik opzoek gegaan naar een tab-bar die mij aanspreekt, en past bij het verdere
+                            design van de website. Op de designpagina heb ik een tekstgedeelte neergezet met een afbeelding van design
+                            thinking.<br /><br />
+                            Tot slot heb ik nog een contactpagina verder ontwikkeld. De pagina heeft nu veel meer details dan de pagina in Balsamiq, met nu
+                            meer kleur en detail. <br /><br />
+                            Met het resultaat ben ik erg tevreden. Deze high-fidelity wireframe in Figma heeft me nog meer aan het
+                            denken gezet hoe ik met behulp van de tools een strak ontwerp neer moet zetten, wat naar mijn mening heeft
+                            geleid tot een mooi resultaat. Daarom zou ik het ontwerpproces ook weer precies hetzelfde aanpakken.
+                            <br /><br />
+                
+                            Deze drie pagina’s heb ik grafisch ontworpen als voorbeeld design voor mijn eindproduct. Nu ik een
+                            definitief design met alle details, kan ik aan de slag met het maken van een eindproduct. Op deze manier heb
+                            ik nu een nog duidelijker design hoe mijn website eruit moet komen te zien. <br /><br />
+                            <a target="_blank" href="pdf/Figma_wireframe.pdf" title="">Klik hier om mijn grafisch design in Figma te bekijken.</a>
+                          </p>
+                            </div>
+                            </div>
+                            </div>
+                        </section>
+
+<!-- De sectie is afgesloten en we beginnen aan de sectie development-->
+                        <section class = "Development" id = "Development">
+                          <br/>
+                          <br/>
+                    
+                           <h2>Development</h2><br/>
+                           <p class = "p_info">In deze tab bar is er onder andere te lezen over mijn toegepaste best practicices, de toegankelijkheid van mijn website, de relatie tussen mijn wireframe en de ontwikkelde frontend.</p>
+                           <br><br/>
+  <!-- Hier begint het tabmenu voor de developmentpagina-->
+  <div class="tab_development">    
+    <button class="tablinks1" onclick="informatie(event, 'practicices')" id = "defaultOpen1">Best practicices</button>
+    <button class="tablinks1" onclick="informatie(event, 'accessibility')">Richtlijnen voor accessibility</button>
+    <button class="tablinks1" onclick="informatie(event, 'relatie')">Relatie wireframe en front-end</button>
+    <button class="tablinks1" onclick="informatie(event, 'uploaden')">DNS en uploaden</button>
+    <button class="tablinks1" onclick="informatie(event, 'w3c')">W3C Check</button>
+  </div>        
+
+  <!-- De eerste tab met daarin de content-->
+    <div id="practicices" class="tabcontent1">
+      <div class = "FDD-stuk">
+          <h2>Best practicices voor design</h2>
+        <div class = "lijn"></div>
+        <p class = "text"> Er zijn een aantal simpele ontwerpprincipes voor je website waardoor je interessantere en boeiendere visuele ervaringen creëert. Deze ontwerpprincipes heten namelijk de Gestaltprincipes. <br/><br/>
+          Als we kijken naar de Gestaltprincipes, is er in mijn beroepsproduct het principe van nabijheid terug te vinden. Het logo van de website staat namelijk helemaal aan de linkerkant in het navigatiemenu en de links staan naast elkaar op gelijke afstand. Hierdoor is voor de gebruiker de navigatiebar overzichtelijk omdat er nu “voorwerpen” naast elkaar zijn geplaatst waartussen een relatie is.<br/><br/>
+          <img class= img_practicices1 src="img/practicices1.png" alt="Best practicices"><br/>
+          Een ander principe die is terug te vinden is het principe van gelijkenis. Dit is bijvoorbeeld in het gedeelte over het vak FDD is het onderwerp Design Thinking terug te vinden. Dit onderwerp heb ik beschreven in drie tekstblokken van dezelfde grootte naast elkaar. Op deze manier ziet de gebruiker dit als een geheel wat bij elkaar hoort. <br/><br/>
+          Daarnaast heb ik alle andere stukken tekst per onderwerp verdeeld in witte tekstvakken met een grijze achtergrond, zodat de gebruiker een goed overzicht heeft van de verschillende onderwerpen. Bovendien oogt dit ook een heel stuk fijner dan grote lappen tekst.<br/><br/>
+          <img class= img_practicices2 src="img/practicices2.png" alt="Best practicices"><br/>
+          Met behulp van deze twee belangrijke principes die zijn toegepast, krijgt de gebruiker meer overzicht, kan hij gemakkelijker keuzes maken en voelt de gebruiker zich meer thuis op de website. Gestaltprincipes die ik de volgende keer kan meenemen is het principe van sluiting (ontbrekende delen worden toch waargenomen om een compleet beeld te zien). Dit principe vond ik erg interessant toen ik tijdens de les hiervan te horen kreeg, en wilde deze graag toevoegen. Later in het ontwikkelproces helaas niet meer aan gedacht, dus voor een volgende keer neem ik dit principe zeker mee. Voor een andere keer wil ik graag ook meer (verschillende) Gestaltprincipes meenemen in mijn eindproduct, want nu zijn het er naar mijn mening nog wat weinig. 
+</p>          
+   </div> 
+  </div>
+
+    <!-- De tweede tab met daarin de content-->
+  <div id="accessibility" class="tabcontent1">
+    <div class = "FDD-stuk">
+        <h2>Richtlijnen voor accessibility</h2>
+      <div class = "lijn"></div>
+      <p class = "text">In het ontwerp en ontwikkelproces van het eindproduct heb ik rekening gehouden met verschillende toevoegingen om de website voor iedereen zo toegankelijk mogelijk te maken. <br/><br/>
+        Wat op de website meteen al opvalt, zijn de Briste en Nederlandse vlag. Wanneer er geklikt wordt op de Britse vlag, dan wordt de website in het engels weergegeven. Wanneer je dan weer op de Nederlandse vlag klikt, zal de tekst weer in het Nederlands verschijnen. Op deze manier is mijn website ook voor mensen die geen Nederlands kunnen lezen toegankelijk. <br/><br/>
+        Daarnaast heb ik ook rekening gehouden met het weergeven van de tekst op mijn pagina. De tekst op mijn website bevat letters van 16px, waardoor de tekst goed is te lezen. Waar ook rekening mee is gehouden, is dat elk verschillend onderwerp van een informatietab verdeeld staan binnen witte tekstvakken waardoor de gebruiker gemakkelijker en sneller een stukje tekst leest. Het zou mensen eerder afschrikken als er een grote lap tekst op de website staat. Ook heb ik de knoppen op de hero-banner en de knop in de contactpagina groot genoeg gemaakt waardoor ze ook voor oudere mensen of mensen die slechtziend zijn opvallen.<br/><br/>
+        Tot slot is er ook rekening gehouden met een klein interactief gedeelte. Ik heb namelijk gebruik gemaakt van zogehete tabbars en uitklapbare tekstgedeelten. Met deze mogelijkheden kan de gebruiker zelf klikken naar een volgende tab om informatie te lezen en foto’s te bekijken, of wanneer de gebruiker de informatie gelezen heeft, kan de tekst weer worden ingeklapt. Dit zorgt overigens ook voor een goed overzicht van verschillende (sub)onderwerpen binnen de website.<br/><br/>
+        Deze functies zijn erg belangrijk geweest omdat nu een nog grotere doelgroep de website kan bezoeken en voor een heel groot deel van de mensen toegankelijk is. In een volgende website zou ik graag tekst naar spraak willen toevoegen voor mensen die niet of slecht kunnen lezen. Dit zal echter een kleine doelgroep zijn, maar dit maakt het wel mogelijk dat meer mensen mijn website kunnen bezoeken en gebruiken. <br/>
+        Tot slot heb ik nog een accessibility test gedaan op mijn website met behulp van de lighthouse functie binnen de functie inspecteren in de webbrowser. Er kwam een toegankelijkheidsscore uit van 97%. Het enige wat moest worden aangepast is het verbeteren van contrast van de button op de contactpagina. Uiteraard is dat probleem nu verholpen. <br/>
+        <br/><img class= img_lighthouse src="img/lighthouse.png" alt="Accessibility test lighthouse">
+
+
+
+      </p>
+</div>
+</div>
+
+  <!-- De derde tab met daarin de content-->
+<div id="relatie" class="tabcontent1">
+  <div class = "FDD-stuk">
+      <h2>Relatie tussen wireframe en frontend</h2>
+    <div class = "lijn"></div>
+    <p class = "text">Mijn grafisch design is gemaakt in <a target="_blank" href="https://www.figma.com/" title="Figma">Figma.</a> In het onderwerp “ontwerpproces” is daar meer over te lezen. De frontend die grafisch is vormgegeven komt redelijk overeen met de daadwerkelijk ontwikkelde frontend in HTML en CSS. Op de hero-banner op de voorpagina heb ik nu een combinatie van twee kleuren staan, een kleurovergang. De buttons en de navigatiebar op de homepagina komen met elkaar overeen, al heb ik de buttons wat minder breed gemaakt. <br/><br/>
+     <img class=img_home_figma src="img/home_figma.png" alt="Homepage in Figma"><br/>
+
+      Op de detailpagina komt elk detail overeen. Er is gebruik gemaakt van een tab-bar, witte tekstvakken en de tekst staat in het midden. <br/><br/>
+      <img class= img_detail_figma src="img/detail_figma.png" alt="Detailpagina in Figma"><br/>
+      De contactpagina heb ik iets anders ontwikkeld. Zowel de contactgegevens als het contactformulier staan ook gegroepeerd in twee aparte witte tekstvakken. <br/><br/>
+      Het contactformulier in Figma komt wel overeen met hoe die website is gemaakt, maar de contactgegevens heb ik iets anders neergezet, namelijk ook in een wit tekstvak met gekleurde icoontjes met daarachter de contactinformatie. De informatie staat bovendien in het midden, omdat dit overeenkomt met de rest van de tekst op de website. 
+     <br/><br/>
+     <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCNFJx9Yll7cKStyi1KTmhj%2FIndex.html%3Fnode-id%3D28%253A3485" allowfullscreen></iframe>    </p>
+</div>
+</div>      
+
+  <!-- De vierde tab met daarin de content-->
+<div id="uploaden" class="tabcontent1">
+  <div class = "FDD-stuk">
+      <h2>DNS en uploaden</h2>
+      <h3>Week 7</h3>
+    <div class = "lijn"></div>
+    <p class = "text">
+     <b> Website uploaden en DNS</b><br/><br/>
+      DNS staat voor Domain Name System. Dit systeem bevat een database van domeinnamen over de hele wereld. Deze domeinnamen zijn gekoppeld aan een IP adres. Een IP adres is een uniek adres in de vorm van cijfers/getallen, waarmee een computer of server geïdentificeerd kan worden. <br/><br/>
+      Elke computer die op het internet is aangesloten heeft een IP adres. Deze website heeft ook een IP-adres en die wordt gekoppeld aan de domeinnaam. Dit gebeurt op de name server. <br/><br/>
+     <b> Wat gebeurt er als je in je adresbalk een domeinnaam ingeeft?</b><br/>
+      -	Wanneer je een domeinnaam in je adresbalk opgeeft, dan zal je browser verbinding maken met de primary name server (dit is vrijwel altijd de name server van je internetprovider).<br/>
+      -	De domeinnaam server voert  geregeld een DNS update uit, zodat hij weet waar de domeinnamen te vinden zijn.<br/>
+      -	Deze informatie wordt opgeslagen door de name server en dan weet hij meteen welke server aansprakelijk is voor welk domein.<br/>
+      -	Als je dan een domeinnaam op wilt vragen, dan geeft de nameserver een IP-adres terug.<br/>
+      -	Vervolgens geeft de nameserver dan dit nummer door aan de provider en zo weet hij waar de domeinnaam te vinden is.<br/>
+      -	Nu laat de webserver de pagina zien in je browser.<br/><br/>
+      Dit volledige proces die in zes stappen staat beschreven duurt in werkelijkheid maar enkele seconden. Dit is echter wel afhankelijk van de snelheid van je internet. Het domain name systeem onthoudt al deze informatie maar voor een paar dagen, wanneer er een nieuw verzoek is voor een domeinnaam, dan voert deze weer een update uit. 
+      <br/><br/>
+      Tijdens de laastste les FDD hebben we onze website geüpload met behulp van de tool <a target="_blank" href="https://www.msp360.com/explorer/windows/amazon-s3.aspx" title="Cloudberry Explorer">CloudBerry Explorer.</a> Je kunt met CloudBerry heel gemakkelijk bestanden die op je computer of laptop staan, verplaatsen naar de server. <br/>
+      Wanneer je Cloudberry geïnstalleerd hebt, dan kies je in het startscherm voor Amazon S3. Je maakt hier een Amazon S3 account aan met de bijbehorende sleutels die je van de docent hebt gekregen.
+      Hierna kun je gemakkelijk je bestanden slepen naar de server. Let er wel op dat je eerst in de zoekbalk van de server de juiste locatie invoert (zie rode rechthoek in onderstaande afbeelding). In mijn geval moest deze regel worden ingevuld: fdd.hbo-ict.resources/2122/jnsmits<br/>
+      Wanneer je deze stappen gevolgd hebt, staat je website online!
+      <br/><br/>
+      <img class = "img_cloudberry" src="img/cloudberry.png" alt="Cloudberry"><br/>
+      </p>
+      </div>
+      </div>
+
+        <!-- De vijfde tab met daarin de content-->
+      <div id="w3c" class="tabcontent1">
+        <div class = "FDD-stuk">
+            <h2>Bewijs van W3C Check</h2>
+          <div class = "lijn"></div>
+          <p class = "text">
+            Onderstaande afbeeldingen laten de W3C check zien dat er geen fouten of waarschuwingen zitten in mijn HTML en CSS bestanden van deze website. Daarnaast heb ik een ingebouwde W3C Check-tool in Visual Studio Code geïnstalleerd om fouten en waarschuwingen tijdens het bouwproces op te lossen.  
+            <img src="img/w3c1.png" alt="W3C check 1, index.html"><br/>
+            De index.html pagina.<br/><br/>
+            <img src="img/w3c2.png" alt="W3C check 2, index-en.html"><br/>
+            De index-en.html pagina.<br/><br/>
+            <img src="img/w3c3.png" alt="W3C check 3, style.css"><br/>
+            De style.css stylesheet.
+            </p>
+            </div>
+            </div>
+</section>  
+    <!-- De sectie is afgesloten en we beginnen met de contactpagina-->
+                        
+                          <div class="contact" id = "Contact">
+                            <h1>Contact</h1>
+                            <div class = "container">
+                              <div class = "row">
+                                <div class = "FDD-stuk">
+                                  <h2>Contactinformatie</h2><br/>
+                                  <p class = "text"> 
+                                    <a class = "link-contact-justin" href="https://znap.link/justinsmits">Justin Noah Smits</a> 
+                                    <address>
+                                      <a href="mailto:jnsmits@student.che.nl">jnsmits@student.che.nl</a><br>
+                                      <a href="tel:0644976400">06-44976400</a><br/>
+                                      <div id="idLinkedInIcon" onclick="window.open('https://www.linkedin.com/in/justin-s-973b2a209/');" title="How to Add LinkedIn Icon in HTML">in</div>
+                                    </address>
+                                    <img class= img_profielfoto src="img/profielfoto.jpg" alt="Profielfoto">
+                                    </div>                     
+                                </div>
+                                </div>
+                                </div>
+
+
+<!-- Hier staat de code voor het contactformulier-->
+
+  <div class = "contact-stuk">
+  <h2 class = "h2contact">Contactformulier</h2><br/><br/>
+ <!-- M.b.v formsubmit.co kun je gemakkelijk de formulierresultaten naar je toegemailt krijgen en de contactaanvraag dus beantwoorden.-->
+
+<form action = "https://formsubmit.co/jnsmits@student.che.nl" method = "POST">
+<input type="hidden" name="_subject" value="Er is een contactformulier ingevuld">
+<input type="hidden" name="_autoresponse" value="Bedankt voor het invullen van het contactformulier. Er zal binnen 24 uur contact met u worden opgenomen.">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://fdd.che-ict.nl/2122/jnsmits/dankjewel.html">
+<input type = "text" name = "Voornaam" placeholder= "Voornaam" required><br/><br/><br/>
+<input type = "text" name = "Achternaam" placeholder= "Achternaam" required><br/><br/><br/>
+<input type="email" name="Emailadres" placeholder="Je emailadres" required><br/><br/><br/>
+<input type = "number" name = "Telefoonnummer" placeholder= "Telefoonnummer" required><br/><br/><br/>
+<input type = "text" name = "Onderwerp" placeholder= "Onderwerp" required><br/><br/><br/>
+<textarea name = "Bericht" placeholder= "Bericht" required></textarea><br/><br/><br/><br/><br/><br/>
+<button type = "submit" class = "contact_button">Send</button>
+</form>        
+     </div>       
+     <!-- Footer-->                    
+<footer class = "footer center">
+    <p class = "text">Copyright &copy; Justin Smits | Studentnummer : 210055 | Alle rechten voorbehouden | <a target="_blank" href="pdf/Bronvermelding.pdf" title="">Bronvermelding</a>
+    </p>
+</footer>                    
+ <!-- Een stukje JavaScript om het tabmenu werkend te maken-->
+ <script>
+  function informatie(evt, tekst) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent1");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks1");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tekst).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  document.getElementById("defaultOpen1").click();
+
+  </script>
+  </body>
+  </html>
+
+  
